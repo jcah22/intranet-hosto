@@ -19,7 +19,7 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <section class="vh-100" style="background-color: #ffffff">
+    <section class="vh-100" style="background-color: #e3e4e5">
       <div class="container py-5 h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
           <div class="col col-xl-10">
@@ -27,7 +27,7 @@
               <div class="row g-0">
                 <div class="col-md-6 col-lg-5 d-none d-md-block">
                   <img
-                    th:src="@{/images/hosto.jpg}" 
+                    th:src="@{/images/f.jpg}"
                     alt="login form"
                     class="img-fluid"
                     style="border-radius: 2rem 0 0 1rem"
@@ -37,11 +37,14 @@
                   <div class="card-body p-4 p-lg-5 text-black">
                     <form>
                       <div class="d-flex align-items-center mb-3 pb-1">
-                        <i
-                          class="fas fa-cubes fa-2x me-3"
-                          style="color: #ff6219"
-                        ></i>
-                        <span class="h1 fw-bold mb-0">Logo</span>
+                        <span class="h1 fw-bold mb-0">
+                          <img class="justify-content-center"
+                            th:src="@{/images/logo-hosto.jpg}"
+                            alt="login form"
+                            width="80px"
+                             
+                          />
+                        </span>
                       </div>
 
                       <h5
@@ -82,7 +85,6 @@
                         </button>
                       </div>
 
-                      
                       <a href="#!" class="small text-muted">Terms of use.</a>
                       <a href="#!" class="small text-muted">Privacy policy</a>
                     </form>
