@@ -7,5 +7,8 @@ import com.hosto.intranet.entity.Area;
 
 @Repository
 public interface AreaRepository extends JpaRepository<Area,Integer>{
+
+
+     
     
 }
