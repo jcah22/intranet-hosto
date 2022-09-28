@@ -23,11 +23,8 @@ public class Area {
     @NonNull
     private String Nombre;
 
-
-
     public Area() {
     }
-
 
     public Area(Integer id, String nombre, List<Usuario> usuarios) {
         this.id = id;
@@ -35,54 +32,31 @@ public class Area {
         this.usuarios = usuarios;
     }
 
-
-
-
-
-
-
     @OneToMany(mappedBy = "area")
     private List<Usuario> usuarios;
-
-
 
     public Integer getId() {
         return id;
     }
 
-
-
     public void setId(Integer id) {
         this.id = id;
     }
-
-
 
     public String getNombre() {
         return Nombre;
     }
 
-
-
     public void setNombre(String nombre) {
         Nombre = nombre;
     }
-
-
 
     public List<Usuario> getUsuarios() {
         return usuarios;
     }
 
-
-
     public void setUsuarios(List<Usuario> usuarios) {
         this.usuarios = usuarios;
     }
 
-
-    
-
-
-    
 }

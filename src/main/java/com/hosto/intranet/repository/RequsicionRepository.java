@@ -7,16 +7,14 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import com.hosto.intranet.entity.Requisicion;
-import com.hosto.intranet.entity.Usuario;
 
 @Repository
-public interface RequsicionRepository extends JpaRepository<Requisicion,Integer> {
+public interface RequsicionRepository extends JpaRepository<Requisicion, Integer> {
 
+    // @Query("SELECT r FROM Requsicion r WHERE r.codigo LIKE ?1% ")
+    // public List<Requisicion> findByCodigo(String codigo);
+    @Query(
 
-     //  @Query("SELECT p FROM Producto  p WHERE p.nombre LIKE %?1% " + "OR p.marca LIKE %?1%" + "OR p.hechoEn LIKE %?1%")
-     @Query("SELECT r FROM Requisicion r WHERE"  + " LIKE %?1%")
-     public List<Usuario> findAll(String palabraClave);
-
-     public List<Usuario> listarTodos();
-    
+            value = "select * from requicisiones WHERE requicisiones.codigo LIKE %:filtro%", nativeQuery = true)
+    List<Requisicion> searchFiltroRepository(String filtro);
 }

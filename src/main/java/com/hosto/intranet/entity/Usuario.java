@@ -16,7 +16,7 @@ import javax.validation.constraints.NotNull;
 @Entity
 @Table(name = "usuarios")
 public class Usuario {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -134,35 +134,5 @@ public class Usuario {
     public void setOdc(List<Odc> odc) {
         this.odc = odc;
     }
-
-    
-
-    
-
-    
-
-
-
-   
-
-  
-
-
-
-
-   
-
-   
-
-
-
-   
-
-    
-
-    
-
-    
-
 
 }

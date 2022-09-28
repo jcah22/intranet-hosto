@@ -163,11 +163,4 @@ public class Odc {
         this.requisicion = requisicion;
     }
 
-    
-    
-    
-    
-
-    
-    
 }

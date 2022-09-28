@@ -16,7 +16,6 @@ import javax.validation.constraints.NotNull;
 @Table(name = "requicisiones")
 public class Requisicion {
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -36,7 +35,6 @@ public class Requisicion {
     public Requisicion() {
     }
 
-
     public Requisicion(Integer id, @NotNull String nombre, @NotNull String codigo, List<Empresa> empresas,
             List<Odc> odc) {
         this.id = id;
@@ -45,12 +43,6 @@ public class Requisicion {
         this.empresas = empresas;
         this.odc = odc;
     }
-
-
-
-
-
-
 
     public Integer getId() {
         return id;
@@ -84,9 +76,4 @@ public class Requisicion {
         this.empresas = empresas;
     }
 
-   
-
-
-
-    
 }

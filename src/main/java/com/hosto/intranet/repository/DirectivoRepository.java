@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.hosto.intranet.entity.Directivo;
 
 @Repository
-public interface DirectivoRepository extends JpaRepository<Directivo,Integer> {
-    
+public interface DirectivoRepository extends JpaRepository<Directivo, Integer> {
+
 }

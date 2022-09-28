@@ -41,11 +41,4 @@ public class Directivo {
         this.nombre = nombre;
     }
 
-    
-
-    
-
-
-    
-    
 }
